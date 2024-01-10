@@ -2,7 +2,7 @@ body {
   background-color: #b81350;
 }
 
-.container h1 {
+.container h2 {
   font-size: 3.5rem;
   color: white;
 }
@@ -21,4 +21,13 @@ form .input {
   background-color: white;
   border: 1px solid #b81350;
   border-radius: 5px;
+}
+
+.card #nome-passeggero {
+  background-color: #808080;
+  height: 100%;
+}
+
+.row#dati-biglietto {
+  height: 100px;
 }

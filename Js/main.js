@@ -3,7 +3,8 @@ const userkmInput = document.querySelector("#user-km");
 const userAgeInput = document.querySelector("#user-selection");
 const insBtn = document.querySelector("#ins-btn");
 const resultElement = document.querySelector("#result-js");
-
+const inputName = document.querySelector("#name");
+const resultName = document.querySelector("#user-name");
 // Alla pressione del bottone si dovrà calcolare il prezzo del biglietto tenendo conto dell'etá e dei km da percorrere
 insBtn.addEventListener("click", function () {
   const userKm = userkmInput.value;
@@ -11,6 +12,9 @@ insBtn.addEventListener("click", function () {
 
   const userAge = userAgeInput.value;
   console.log(userAge);
+
+  const userName = inputName.value;
+  console.log(userName);
 
   //   calcolo prezzo
   const costKm = 0.21;
@@ -27,6 +31,8 @@ insBtn.addEventListener("click", function () {
   }
 
   //   Stampa risultato
-  resultElement.innerText = tripCost;
+  resultName.innerText = userName;
+
+  resultElement.innerText = tripCost.toFixed(2);
   console.log(tripCost);
 });
