@@ -5,6 +5,7 @@ body {
 .container h2 {
   font-size: 3.5rem;
   color: white;
+  text-align: center;
 }
 
 .card {
